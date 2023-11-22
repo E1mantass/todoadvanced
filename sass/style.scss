@@ -1,14 +1,38 @@
 body{
-    width: 90%;
-    margin: 0 auto;
-    table{
-        thead{
 
-            tr{
-                th{
-                    font-family: 'Poppins', sans-serif;
-                    color: grey;
+    .main-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        form{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-self: center;
+            margin-top: 30px;
+            input[type=date]:after {
+                content: attr(placeholder)
+                
+              }
+            input[type=text] {
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+            ::placeholder{
+                text-align: center;
+            }
+        }
+        table{
+            thead{
 
+                tr{
+                    th{
+                        font-family: 'Poppins', sans-serif;
+                        color: grey;
+                    
+                    }
                 }
             }
         }
